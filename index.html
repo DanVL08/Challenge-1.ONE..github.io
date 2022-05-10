@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=75%">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador 1</title>
+</head>
+<body>
+    <h1>Encriptador de texto</h1>
+    
+    <img src="images/Logo.png" alt="logo" class="logoImagen">
+
+    <textarea name="textarea1" id="textoAEncriptar" cols="30" rows="10">Ingrese el texto aqui</textarea>
+
+    <textarea name="textarea2" id="textoEncriptado_Desencriptado" cols="30" rows="10"></textarea>
+
+    <p id="indicacion"><img src="images/bi_exclamation-circle-fill.png" alt="bi_exclamation-circle-fill"> solo letras minúsculas y sin acentos</p>
+
+    <input type="button" value="Encriptar" onclick="encriptar()" id="btnEncriptar">
+
+    <input type="button" value="Desencriptar" onclick ="desencriptar()" id="btnDesencriptar">
+
+    <input type="button" value="Copiar" onclick ="copiarTexto()" id="btnCopiar">
+
+<div id="cajaSinTexto">
+
+
+    <img src="images/Muñeco.png" alt="muñeco" id = "muñeco">
+    <label id="sinElmt1"> Ningún mensaje fue <br> encontrado</label>
+    <label id="sinElmt2"> Ingresa o selecciona el texto que desees encriptar o <br> desencriptar</label>
+
+    <br>
+</div>
+<p id="miDatos">2022 - Daniel Vargas López - Oracle ONE-  Alura Latam</p>
+    <script src="script.js"></script>
+</body>
+</html>
